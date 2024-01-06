@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<c:NeutralButton xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:c="clr-namespace:School_Project.Controls"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 Text="Farbe wählen"
+                 x:Class="School_Project.Controls.ColorSelector"/>

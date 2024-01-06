@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ElementView xmlns="http://xamarin.com/schemas/2014/forms" 
+                       xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:i="clr-namespace:School_Project.Information"
+                       x:TypeArguments="i:Exam"
+                       x:Class="School_Project.Tabs.ExamFolder.ExamView">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal" Spacing="50">
+            <StackLayout>
+                <Label x:Name="name" FontAttributes="Bold"/>
+                <Label x:Name="date" FontSize="Medium"/>
+            </StackLayout>
+            <Label x:Name="themes" FontSize="Medium" HorizontalOptions="FillAndExpand"/>
+        </StackLayout>
+    </ContentView.Content>
+</templates:ElementView>

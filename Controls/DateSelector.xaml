@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:c="clr-namespace:School_Project.Controls"
+       xmlns:m="clr-namespace:School_Project.Management"
+       Padding="0"
+       BackgroundColor="{x:Static m:ColorManager.OverlayColor}"
+       x:Class="School_Project.Controls.DateSelector">
+    <Frame.Content>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+            <c:Selector x:Name="day"/>
+            <c:Selector x:Name="month"/>
+            <c:Selector x:Name="year"/>
+        </StackLayout>
+    </Frame.Content>
+</Frame>

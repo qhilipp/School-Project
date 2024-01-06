@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             VerticalOptions="FillAndExpand"
+             Spacing="10"
+             x:Class="School_Project.Controls.TabSelector">
+    <StackLayout.Children>
+        <StackLayout x:Name="bar" Orientation="Horizontal"/>
+        <ContentView x:Name="content" VerticalOptions="FillAndExpand"/>
+    </StackLayout.Children>
+</StackLayout>

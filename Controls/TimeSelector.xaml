@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:School_Project.Management"      
+             xmlns:c="clr-namespace:School_Project.Controls"
+             Padding="0"
+             BackgroundColor="{x:Static m:ColorManager.OverlayColor}"
+             x:Class="School_Project.Controls.TimeSelector">
+    <Frame.Content>
+        <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="CenterAndExpand" Padding="0">
+            <c:Selector x:Name="hour" BackgroundColor="Transparent"/>
+            <Label Text=":" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center"/>
+            <c:Selector x:Name="minute" BackgroundColor="Transparent"/>
+            <Label Text="Uhr" VerticalOptions="CenterAndExpand"/>
+        </StackLayout>
+    </Frame.Content>
+</Frame>

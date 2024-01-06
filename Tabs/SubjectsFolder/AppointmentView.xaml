@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ElementView xmlns="http://xamarin.com/schemas/2014/forms" 
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                       xmlns:i="clr-namespace:School_Project.Information"
+                       x:TypeArguments="i:Appointment"
+                       x:Class="School_Project.Tabs.SubjectsFolder.AppointmentView">
+    <ContentView.Content>
+        <StackLayout>
+            <Label x:Name="day" FontAttributes="Bold"/>
+            <StackLayout Orientation="Horizontal">
+                <Label x:Name="time"/>
+                <Label x:Name="room"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</templates:ElementView>

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+             xmlns:i="clr-namespace:School_Project.Information"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             xmlns:m="clr-namespace:School_Project.Management"
+             NavigationPage.HasNavigationBar="False"
+             Padding="{x:Static m:Settings.Padding}"
+             BackgroundColor="{x:Static m:ColorManager.BackgroundColor}"
+             x:Class="School_Project.Tabs.SubjectsFolder.SubjectInfo">
+    <ContentPage.Content>
+        <Frame Padding="0" HorizontalOptions="CenterAndExpand">
+            <ScrollView x:Name="scroll">
+                <StackLayout x:Name="layout">
+                    <c:HeaderLabel x:Name="name"/>
+                    <Label x:Name="withat" FontAttributes="100" HorizontalOptions="Center"/>
+                    <Label x:Name="description" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                    <c:Line/>
+                    <Label x:Name="homeworkHeader" Text="Hausaufgaben" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <templates:ElementList x:Name="homework" x:TypeArguments="i:Homework" HasAddButton="False"/>
+                    <c:Line/>
+                    <Label x:Name="examHeader" Text="Klausuren" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <templates:ElementList x:Name="exams" x:TypeArguments="i:Exam" HasAddButton="False"/>
+                    <c:Line/>
+                    <Label x:Name="appointmentHeader" Text="Termine" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <templates:ElementList x:Name="appointments" x:TypeArguments="i:Appointment" HasAddButton="False"/>
+                    <c:Line/>
+                    <Label x:Name="themeHeader" Text="Themen" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                    <templates:ElementList x:Name="themes" x:TypeArguments="i:Theme" HasAddButton="False">
+                        <x:Arguments>
+                            <x:Boolean>False</x:Boolean>
+                            <x:Boolean>False</x:Boolean>
+                        </x:Arguments>
+                    </templates:ElementList>
+                    <c:Line/>
+                    <StackLayout x:Name="gradesLayout">
+                        <Label x:Name="gradesHeader" Text="Noten" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+                        <ContentView x:Name="grades"/>
+                        <c:Line/>
+                    </StackLayout>
+                    <StackLayout VerticalOptions="EndAndExpand">
+                        <c:NeutralButton x:Name="notes" Text="Notizen"/>
+                        <c:NeutralButton x:Name="practices" Text="Übungen"/>
+                        <c:NeutralButton x:Name="edit" Text="Bearbeiten"/>
+                    </StackLayout>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates:AddPage xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:c="clr-namespace:School_Project.Controls"
+                   xmlns:i="clr-namespace:School_Project.Information"
+                   x:TypeArguments="i:Homework"
+                   x:Class="School_Project.Tabs.HomeworkFolder.AddHomework">
+    <templates:AddPage.Options>
+        <c:SubjectSelector x:Name="selectSubject"/>
+        <c:DateSelector x:Name="selectDate" HorizontalOptions="FillAndExpand"/>
+        <c:TimeSelector x:Name="selectTime"/>
+        <c:TextBox x:Name="description" Placeholder="Beschreibung" HorizontalOptions="FillAndExpand"/>
+    </templates:AddPage.Options>
+</templates:AddPage>

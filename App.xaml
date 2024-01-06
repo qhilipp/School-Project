@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:School_Project.Management"
+             x:Class="School_Project.App">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{x:Static m:ColorManager.TextColor}"/>
+                <Setter Property="FontSize" Value="{x:Static m:Settings.FontSize}"/>
+            </Style>
+            <Style TargetType="ContentView">
+                <Setter Property="BackgroundColor" Value="{x:Static m:ColorManager.BackgroundColor}"/>
+            </Style>
+            <Style TargetType="Frame">
+                <Setter Property="BackgroundColor" Value="{x:Static m:ColorManager.BackgroundColor}"/>
+                <Setter Property="CornerRadius" Value="{x:Static m:Settings.CornerRadius}"/>
+                <Setter Property="Padding" Value="{x:Static m:Settings.Padding}"/>
+            </Style>
+            <Style TargetType="StackLayout">
+                <Setter Property="Spacing" Value="{x:Static m:Settings.Spacing}"/>
+            </Style>
+            <Style TargetType="ContentPage">
+                <Setter Property="Padding" Value="{x:Static m:Settings.Padding}"/>
+                <Setter Property="BackgroundColor" Value="{x:Static m:ColorManager.BackgroundColor}"/>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

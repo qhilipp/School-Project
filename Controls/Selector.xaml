@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:School_Project.Management"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             Padding="5"
+             BackgroundColor="{x:Static m:ColorManager.OverlayColor}"
+             x:Class="School_Project.Controls.Selector">
+  <ContentView.Content>
+        <c:CustomPicker x:Name="picker" TextColor="{x:Static m:ColorManager.TextColor}" BackgroundColor="Transparent"/>
+    </ContentView.Content>
+</Frame>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:AddPage xmlns="http://xamarin.com/schemas/2014/forms"
+                   xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                   xmlns:i="clr-namespace:School_Project.Information"
+                   xmlns:c="clr-namespace:School_Project.Controls"
+                   x:TypeArguments="i:Appointment"
+                   x:Class="School_Project.Tabs.TimetableFolder.AddAppointment">
+    <templates:AddPage.Options>
+        <c:Selector x:Name="day" HorizontalOptions="FillAndExpand"/>
+        <c:SubjectSelector x:Name="selectSubject"/>
+        <c:TimeSelector x:Name="time"/>
+        <c:TextBox x:Name="duration" Placeholder="Dauer in min" MaxLength="3" Input="{x:Static c:TextBox.Int}"/>
+    </templates:AddPage.Options>
+</templates:AddPage>

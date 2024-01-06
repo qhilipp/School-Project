@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             xmlns:m="clr-namespace:School_Project.Management"
+             Spacing="{x:Static m:Settings.Spacing}"
+             x:Class="School_Project.Tabs.PracticeFolder.AddVocabPracticeTab">
+    <StackLayout.Children>
+        <c:TextBox x:Name="german" Placeholder="Deutscher Begriff"/>
+        <c:TextBox x:Name="foreign"/>
+        <StackLayout x:Name="props" Spacing="{x:Static m:Settings.Spacing}"/>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="{x:Static m:Settings.Spacing}">
+            <c:NeutralButton x:Name="removeProp" Text="-"/>
+            <c:NeutralButton x:Name="addProp" Text="+"/>
+        </StackLayout>
+    </StackLayout.Children>
+</StackLayout>

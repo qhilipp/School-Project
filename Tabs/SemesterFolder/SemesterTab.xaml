@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ContentTab xmlns="http://xamarin.com/schemas/2014/forms" 
+                      xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                      xmlns:c="clr-namespace:School_Project.Controls"
+                      xmlns:s="clr-namespace:School_Project.Management"
+                      x:Class="School_Project.Tabs.SemesterFolder.SemesterTab"
+                      HorizontalOptions="CenterAndExpand">
+    <templates:ContentTab.TabContent>
+        <StackLayout>
+            <c:HeaderLabel x:Name="name" Text="Semester Einstellungen"/>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Label Text="Jedes Semester hat Fächer, Termine, Übungen, etc. unabhängig von anderen Semestern. Du kannst Jeder Zeit zwischen den Semestern wecheseln oder neue Semester hinzufügen." HorizontalTextAlignment="Center" FontSize="{x:Static s:Settings.SmallFontSize}"/>
+                <c:Selector x:Name="currentSemester"/>
+            </StackLayout>
+        </StackLayout>
+    </templates:ContentTab.TabContent>
+</templates:ContentTab>

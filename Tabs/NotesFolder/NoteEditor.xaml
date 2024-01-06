@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             xmlns:m="clr-namespace:School_Project.Management"
+             NavigationPage.HasNavigationBar="False"
+             Padding="0"
+             x:Class="School_Project.Tabs.NotesFolder.NoteEditor">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="b" TargetType="View">
+                <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Fill" Padding="0" BackgroundColor="{x:Static m:ColorManager.BackgroundColor}">
+            <StackLayout x:Name="tools" Padding="{x:Static m:Settings.Padding}" Orientation="Horizontal">
+                <Label x:Name="back" Text="Zurück" FontSize="{x:Static m:Settings.SmallFontSize}" VerticalOptions="Center" HorizontalOptions="Start" MaxLines="1"/>
+                <c:TextBox x:Name="name" Placeholder="Name oder URL" HorizontalOptions="FillAndExpand"/>
+                <c:NeutralButton x:Name="share" Text="Teilen"/>
+                <ContentView x:Name="options"/>
+            </StackLayout>
+            <Frame x:Name="content" VerticalOptions="FillAndExpand" Padding="0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

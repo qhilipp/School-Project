@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             x:Class="School_Project.Tabs.GradesFolder.GradesPanel">
+  <ContentView.Content>
+        <StackLayout x:Name="layout">
+            <Label x:Name="avg" HorizontalTextAlignment="Center"/>
+            <Label x:Name="span" HorizontalTextAlignment="Center"/>
+            <c:Selector x:Name="format"/>
+            <StackLayout x:Name="themes"/>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

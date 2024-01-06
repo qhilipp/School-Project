@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ElementView xmlns="http://xamarin.com/schemas/2014/forms"
+                       xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                       xmlns:i="clr-namespace:School_Project.Information"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       x:TypeArguments="i:Note"
+                       x:Class="School_Project.Tabs.NotesFolder.NoteView">
+    <templates:ElementView.Content>
+        <Label x:Name="name" FontAttributes="Bold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center"/>
+    </templates:ElementView.Content>
+</templates:ElementView>

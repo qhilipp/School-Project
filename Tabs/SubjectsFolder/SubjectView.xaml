@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<e:ElementView xmlns="http://xamarin.com/schemas/2014/forms" 
+               xmlns:e="clr-namespace:School_Project.Tabs.Templates"
+               xmlns:i="clr-namespace:School_Project.Information"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="School_Project.Tabs.SubjectsFolder.SubjectView"
+               x:TypeArguments="i:Subject">
+    <ContentView.Content>
+        <Label x:Name="name" FontAttributes="Bold" HorizontalTextAlignment="Center" HorizontalOptions="Fill"/>
+    </ContentView.Content>
+</e:ElementView>

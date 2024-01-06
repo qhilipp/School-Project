@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<templates:AddPage xmlns="http://xamarin.com/schemas/2014/forms"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:templates="clr-namespace:School_Project.Tabs.Templates" 
+               xmlns:c="clr-namespace:School_Project.Controls"
+               xmlns:i="clr-namespace:School_Project.Information"
+               x:TypeArguments="i:Subject"
+               x:Class="School_Project.Tabs.SubjectsFolder.AddSubject">
+    <templates:AddPage.Options>
+        <c:TextBox x:Name="name" Placeholder="Fach"/>
+        <c:TextBox x:Name="teacher" Placeholder="Lehrer"/>
+        <c:TextBox x:Name="room" Placeholder="Raum"/>
+        <StackLayout Orientation="Horizontal">
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <c:CheckBox x:Name="lk" Text="LK"/>
+                <c:CheckBox x:Name="addition" Text="Zusatz-Fach"/>
+            </StackLayout>
+            <StackLayout HorizontalOptions="CenterAndExpand">
+                <c:CheckBox x:Name="written" Text="Schriftlich"/>
+                <c:CheckBox x:Name="abi" Text="Abitur-Fach"/>
+            </StackLayout>
+        </StackLayout>
+        <c:ColorSelector x:Name="color"/>
+    </templates:AddPage.Options>
+</templates:AddPage>

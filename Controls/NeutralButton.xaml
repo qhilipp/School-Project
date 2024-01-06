@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       Padding="40,10"
+       x:Class="School_Project.Controls.NeutralButton">
+  <Frame.Content>
+        <Label x:Name="label" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" MaxLines="1"/>
+    </Frame.Content>
+</Frame>

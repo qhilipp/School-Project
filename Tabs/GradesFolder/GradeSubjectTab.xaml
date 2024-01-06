@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<StackLayout xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+             xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:i="clr-namespace:School_Project.Information"
+             x:Class="School_Project.Tabs.GradesFolder.GradeSubjectTab">
+    <Label x:Name="avg" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+    <Label x:Name="span" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+    <templates:ElementList x:Name="list" x:TypeArguments="i:Subject">
+        <x:Arguments>
+            <x:Boolean>True</x:Boolean>
+            <x:Boolean>False</x:Boolean>
+        </x:Arguments>
+    </templates:ElementList>
+</StackLayout>

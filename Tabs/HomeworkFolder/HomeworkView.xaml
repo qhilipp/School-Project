@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ElementView xmlns="http://xamarin.com/schemas/2014/forms" 
+                       xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                       xmlns:i="clr-namespace:School_Project.Information"
+                       xmlns:c="clr-namespace:School_Project.Controls"
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       x:Class="School_Project.Tabs.HomeworkFolder.HomeworkView"
+                       x:TypeArguments="i:Homework">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal" Spacing="50">
+            <StackLayout x:Name="mainContent" HorizontalOptions="FillAndExpand">
+                <StackLayout>
+                    <Label x:Name="name" FontAttributes="Bold"/>
+                    <Label x:Name="date" FontSize="Medium"/>
+                </StackLayout>
+                <Label x:Name="description" FontSize="Medium" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+            <c:CheckBox x:Name="finish"/>
+        </StackLayout>
+    </ContentView.Content>
+</templates:ElementView>

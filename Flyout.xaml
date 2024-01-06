@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:m="clr-namespace:School_Project.Management"
+             x:Class="School_Project.Flyout"
+             Title="School Project"
+             BackgroundColor="{x:Static m:ColorManager.BackgroundColor}">
+    <Frame x:Name="frame" VerticalOptions="FillAndExpand" BackgroundColor="{x:Static m:ColorManager.AccentColor1}">
+        <StackLayout x:Name="layout">
+            <Label x:Name="timetable" Text="Stundenplan"/>
+            <Label x:Name="exams" Text="Klausuren"/>
+            <Label x:Name="homework" Text="Hausaufgaben"/>
+            <Label x:Name="subjects" Text="Fächer"/>
+            <Label x:Name="notes" Text="Notizen"/>
+            <Label x:Name="practice" Text="Lernen"/>
+            <Label x:Name="grades" Text="Noten"/>
+            <Label x:Name="semester" Text="Semester"/>
+        </StackLayout>
+    </Frame>
+</ContentPage>

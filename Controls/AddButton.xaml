@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Frame xmlns="http://xamarin.com/schemas/2014/forms" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+       xmlns:m="clr-namespace:School_Project.Management"
+       x:Class="School_Project.Controls.AddButton"
+       Padding="40, 10"
+       HasShadow="True"
+       HorizontalOptions="CenterAndExpand"
+       BackgroundColor="{x:Static m:ColorManager.AccentColor1}">
+    <Frame.Content>
+          <Label x:Name="label" Text="Hinzufügen" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Start" TextColor="White" MaxLines="1"/>
+  </Frame.Content>
+</Frame>

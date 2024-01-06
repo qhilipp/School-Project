@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<pf:PracticeDisplay xmlns="http://xamarin.com/schemas/2014/forms" 
+                    xmlns:pf="clr-namespace:School_Project.Tabs.PracticeFolder"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                    xmlns:i="clr-namespace:School_Project.Information"
+                    x:TypeArguments="i:MultiPractice"
+                    x:Class="School_Project.Tabs.PracticeFolder.MultiPracticeDisplay">
+    <pf:PracticeDisplay.Answers>
+        <Label x:Name="question" HorizontalTextAlignment="Center"/>
+        <StackLayout x:Name="answers"/>
+    </pf:PracticeDisplay.Answers>
+</pf:PracticeDisplay>

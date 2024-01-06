@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:c="clr-namespace:School_Project.Controls"
+             xmlns:m="clr-namespace:School_Project.Management"
+             Padding="0"
+             BackgroundColor="{x:Static m:ColorManager.BackgroundColor}"
+             x:Class="School_Project.Tabs.Templates.ContentTab">
+    <ContentView.Content>
+        <StackLayout x:Name="layout">
+            <Frame x:Name="frame" VerticalOptions="FillAndExpand" Padding="0"/>
+            <StackLayout x:Name="buttons" Orientation="Vertical">
+                <c:AddButton x:Name="add" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

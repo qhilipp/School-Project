@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<templates:ElementView xmlns="http://xamarin.com/schemas/2014/forms" 
+                       xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                       xmlns:templates="clr-namespace:School_Project.Tabs.Templates"
+                       xmlns:i="clr-namespace:School_Project.Information"
+                       x:TypeArguments="i:Subject"
+                       x:Class="School_Project.Tabs.GradesFolder.SubjectGradeView">
+    <ContentView.Content>
+        <StackLayout Orientation="Horizontal">
+            <Label x:Name="name" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+            <Label x:Name="avg" HorizontalTextAlignment="Center" HorizontalOptions="EndAndExpand"/>
+        </StackLayout>
+    </ContentView.Content>
+</templates:ElementView>
